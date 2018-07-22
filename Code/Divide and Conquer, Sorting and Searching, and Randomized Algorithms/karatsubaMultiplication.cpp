@@ -21,7 +21,7 @@ string addString(string a, string b){
     b = temp + b;
 
   }else if (n1 < n2){
-    string temp(n2 - 1,'0');
+    string temp(n2 - n1,'0');
     a = temp + a;
   } else {
 
@@ -110,7 +110,7 @@ string karatsubaMultiply(string m1, string m2) {
     m2 = temp + m2;
 
   }else if (n1 < n2){
-    string temp(n2 - 1,'0');
+    string temp(n2 - n1,'0');
     m1 = temp + m1;
   } else {
 
@@ -177,10 +177,11 @@ int main(){
   string a("3141592653589793238462643383279502884197169399375105820974944592");
   string b("2718281828459045235360287471352662497757247093699959574966967627");
 
+
   cout<< karatsubaMultiply("5678","1234") << endl; // works
-  cout<< karatsubaMultiply("12345678998765432112345678987654321","1212121212121234343434343434343434444444444") << endl; // doesnt work
+  cout<< karatsubaMultiply("12345678998765432112345678987654321","1212121212121234343434343434343434444444444") << endl; //  work
   // ans for the above  case 14964459392443222363386654166355210140914770544956011896745221548821561042524
-  cout<< karatsubaMultiply(a,b) << endl; // does'nt work
+  cout<< karatsubaMultiply(a,b) << endl; 
 
   return 0;
 
